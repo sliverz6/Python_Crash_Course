@@ -18,6 +18,7 @@ class Bullet(Sprite):
 
         # 탄환의 위치를 부동소수점 숫자로 저장합니다.
         self.y = float(self.rect.y)
+
         self.color = ai_settings.bullet_color
         self.speed_factor = ai_settings.bullet_speed_factor
 
@@ -25,7 +26,7 @@ class Bullet(Sprite):
         """화면 위를 향해 탄환을 움직입니다."""
         # 탄환 위치에 해당하는 부동소수점 숫자를 업데이트합니다.
         self.y -= self.speed_factor
-        # rect이 위치를 업데이트합니다.
+        # rect의 위치를 업데이트 합니다.
         self.rect.y = self.y
 
     def draw_bullet(self):

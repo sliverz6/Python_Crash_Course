@@ -11,7 +11,7 @@ class Alien(Sprite):
         self.screen = screen
         self.ai_settings = ai_settings
 
-        # 외계인 이미지를 불러오고 rect 속서을 설정합니다.
+        # 외계인 이미지를 불러오고 rect 속성을 설정합니다.
         self.image = pygame.image.load("images/alien.bmp")
         self.rect = self.image.get_rect()
 
